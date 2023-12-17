@@ -1,0 +1,46 @@
+.box{
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+}
+.table{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border: transparent;
+}
+.table thead{
+    height: 60px;
+    border-bottom:2px solid red ;
+}
+.table tfoot{
+    height: 80px;
+    border-top:2px solid red ;
+    font-size: large;
+    font-weight: 600;
+}
+table img{
+    height: 130px;
+    width: 130px
+}
+#image{
+    padding: 20px;
+}
+@media (min-width:200px) and (max-width:500px) {
+    .table tfoot{
+        height: 200px;
+    }
+    #gpay{
+        position: absolute;
+        right: 35px;
+    }
+    table img{
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+    #image{
+        padding: 0 2px;
+    }
+
+}

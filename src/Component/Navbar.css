@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 120px;
+    width: auto;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px ;
+    margin: 0 10px;
+}
+.navart1{
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    padding: 7px 25px;
+    text-align: center;
+    border: 3px solid rgb(230, 89, 38);
+    border-radius: 5px;
+
+}
+#navart2{
+    height: 50px;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+}
+button{
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+#categrory{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+@media (min-width:200px) and (max-width:500px) {
+    #navart2{
+        height: 60px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        visibility: hidden;
+    }
+}
