@@ -8,3 +8,117 @@
     row-gap: 20px;
     font-family: sans-serif;
 }
+
+
+
+#poster{
+    height: fit-content;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    overflow: auto;
+    transition-duration: 2s;
+}
+#poster div{
+    height: auto;
+    width: auto;
+}
+
+#poster::-webkit-scrollbar{
+    display: none;
+}
+
+#img1{
+    animation: ani 60s 5s infinite;
+}
+
+
+@keyframes ani {
+    0%{ 
+        margin-left:0 ;
+    }
+    3%{
+
+    }
+    20%{
+        margin-left:-105% ;  
+    }
+    22%{
+
+    }
+    40%{
+        margin-left:-206% ;
+    }
+    42%{
+
+    }
+    60%{
+        margin-left:-310% ;
+    }
+    62%{
+
+    }
+    80%{
+        margin-left:-412% ;
+    }
+    82%{
+
+    }
+    100%{
+        margin-left:0 ;
+    }
+}
+
+@media (min-width:100px) and (max-width:600px) {
+    
+    .carousel img{
+        height: 300px;
+        margin-left: 5px;
+    }
+    #poster{
+        width: 95%;
+    }
+    .img img{
+        height: 100px;
+        width: auto;
+    }
+    #img1{
+        animation: ani1 60s 5s infinite;
+    }
+    @keyframes ani {
+        0%{ 
+            margin-left:0 ;
+        }
+        3%{
+    
+        }
+        20%{
+            margin-left:-105% ;  
+        }
+        22%{
+    
+        }
+        40%{
+            margin-left:-206% ;
+        }
+        42%{
+    
+        }
+        60%{
+            margin-left:-310% ;
+        }
+        62%{
+    
+        }
+        80%{
+            margin-left:-412% ;
+        }
+        82%{
+    
+        }
+        100%{
+            margin-left:0 ;
+        }
+    }
+    
+}

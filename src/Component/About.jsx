@@ -34,6 +34,7 @@ const defaultOptions = {
                     <p>{data.description}</p>
                     <p style={{fontSize:'20px'}}><b>${data.price}</b></p>
                     <p>{data.rating.rate}⭐</p>
+                    <button onClick={()=>handleClick(data)}>Add Cart</button>
                 </div>
             </div>
             <section className="sec">

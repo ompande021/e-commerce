@@ -38,7 +38,7 @@ const Cart = ({cart,setCart}) =>{
     return(
        <div className="box">
         <table border={2} rules="none" className="table">
-            <thead>
+            <thead id='cart-td'>
                 <tr>
                     <td><b>Image</b></td>
                     <td><b>Name</b></td>
@@ -49,16 +49,16 @@ const Cart = ({cart,setCart}) =>{
                     <td><b>Remove</b></td> 
                 </tr>
             </thead>
-            <tbody>
+            <tbody id='cart-tbody'>
                 {cart.map((item)=>{
                     return(
                         <tr>
                             <td id='image'><Link to={`/about/${item.id}`}><img src={item.image} alt=""  /></Link></td>
-                            <td >{item.title}</td>
+                            <td className='item' >{item.title}</td>
                             <td><button onClick={()=>inc(item.id)} >+</button></td>
-                            <td style={{fontSize:'19px'}}>{item.amount}</td>
+                            <td className='item' style={{fontSize:'15px'}}>{item.amount}</td>
                             <td><button onClick={()=>dec(item.id)} >-</button></td>
-                            <td style={{fontSize:'19px'}}>${(item.price * item.amount).toFixed(2)}</td>
+                            <td className='item' style={{fontSize:'15px'}}>${(item.price * item.amount).toFixed(2)}</td>
                             <td><button onClick={()=>handleRemove(item.id)}>Delete</button></td>
                         </tr>
                     )
